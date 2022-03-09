@@ -41,4 +41,5 @@ sifilis <- read_csv('data/casos_municipio.csv', na = '-',
 
 
 sifilis <- sifilis %>% 
-  separate(municipio, into = c('codigo', 'municipio'), sep = " ", extra = 'merge')
+  separate(municipio, into = c('codigo', 'municipio'), sep = " ", extra = 'merge') %>% 
+  pivot_longer(cols = y2010:y2021, names_to = 'ano', names_prefix = 'y', values_to = 'casos')
