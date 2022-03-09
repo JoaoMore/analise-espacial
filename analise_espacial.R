@@ -1,9 +1,21 @@
 library(tidyverse)
 library(data.table)
+library(basedosdados)
+library(dotenv)
+load_dot_env(file = '.env')
+set_billing_id(Sys.getenv("billing_project_id"))
 #library(gitignore)
-
 #gi_write_gitignore(gi_fetch_templates("R"))
 
+
+# População por município -------------------------------------------------
+
+#query <- bdplyr("br_ibge_populacao.municipio")
+#pop <- bd_collect(query)
+load('data/populacao.RData')
+#save(pop, file = 'data/populacao.RData')
+
+# Dados PMAQ --------------------------------------------------------------
 
 pmaq1 <- fread("data/PMAQ_1.csv", 
                select = c('IBGE','UF','CONTROLE_UBS','I_13_1', 'I_7_8_4',
@@ -17,6 +29,16 @@ pmaq2 <- fread("data/PMAQ_2.csv",
 
 
 pmaq3 <- fread('data/PMAQ_3.csv',
-               select = c('ESTADO','IBGE','MUNICIPIO','CNES_FINAL','I_9_2',
-                          'I_15_1','I_15_9_3','I_15_9_4',
-                          'I_11_1','I_11_2','I_11_3','I_11_4','I_11_5'))
+               select = c('ESTADO','IBGE','MUNICIPIO','CNES_FINAL','I.9.2',
+                          'I.15.1','I.15.9.3','I.15.9.4',
+                          'I.11.1','I.11.2','I.11.3','I.11.4','I.11.5'))
+
+# Notificações de sífilis -------------------------------------------------
+
+sifilis <- read_csv('data/casos_municipio.csv', na = '-', 
+                    col_names = c('municipio', paste('y', 2010:2021, sep = '')), 
+                    skip = 1, locale = locale(encoding = "latin2"))
+
+
+sifilis <- sifilis %>% 
+  separate(municipio, into = c('codigo', 'municipio'), sep = " ", extra = 'merge')
