@@ -10,6 +10,24 @@ library(data.table)
 theme_set(theme_minimal())
 
 
+# Cobertura da atenção básica ---------------------------------------------
+
+df <- read_excel("data/cobertura/cobertura2012.xlsx", 
+                 skip = 7)
+
+df[1:(which(df$Competência == "Fonte: e-Gestor Atenção Básica") - 1), ]
+
+for (name in list.files('data/cobertura/')) {
+  
+  i <- 1
+  df[[i]] <- read_excel(paste('data/cobertura/', name, sep = ''), 
+                        skip = 7) %>% 
+    df[1:(which(df$Competência == "Fonte: e-Gestor Atenção Básica") - 1), ]
+  
+  i <- i+1
+  
+}
+
 # Municípios prioritários -------------------------------------------------
 
 municipios_prioritarios <- read_excel("data/municipios_prioritarios.xlsx", 
@@ -97,5 +115,5 @@ cnes %>%
   group_by(municipio) %>% 
   count() %>% 
   write_csv(., file = 'out/data/unidades_por_municipio.csv')
-  
-  
+
+
