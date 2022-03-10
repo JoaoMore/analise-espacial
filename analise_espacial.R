@@ -9,25 +9,6 @@ library(data.table)
 #gi_write_gitignore(gi_fetch_templates("R"))
 theme_set(theme_minimal())
 
-
-# Cobertura da atenção básica ---------------------------------------------
-
-df <- read_excel("data/cobertura/cobertura2012.xlsx", 
-                 skip = 7)
-
-df[1:(which(df$Competência == "Fonte: e-Gestor Atenção Básica") - 1), ]
-
-for (name in list.files('data/cobertura/')) {
-  
-  i <- 1
-  df[[i]] <- read_excel(paste('data/cobertura/', name, sep = ''), 
-                        skip = 7) %>% 
-    df[1:(which(df$Competência == "Fonte: e-Gestor Atenção Básica") - 1), ]
-  
-  i <- i+1
-  
-}
-
 # Municípios prioritários -------------------------------------------------
 
 municipios_prioritarios <- read_excel("data/municipios_prioritarios.xlsx", 
@@ -39,6 +20,28 @@ municipios_prioritarios <- read_excel("data/municipios_prioritarios.xlsx",
 municipios_prioritarios <-  municipios_prioritarios %>% 
   mutate(cod_ibge = str_sub(cod_ibge, end = 6))
 
+# Cobertura da atenção básica ---------------------------------------------
+
+cobertura <- list()
+i <- 1
+
+for (name in list.files('data/cobertura/')) {
+  
+  cobertura[[i]] <- read_excel(paste('data/cobertura/', name, sep = ''), 
+                               skip = 7) %>% 
+    .[1:(which(.$Competência == "Fonte: e-Gestor Atenção Básica") - 1), ]
+  
+  i <- i+1
+  
+}
+
+cobertura <- bind_rows(cobertura) %>% 
+  mutate(Competência = str_sub(Competência, 5),
+         IBGE = as.character(IBGE)) %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge)
+
+#save(cobertura, file = 'data/cobertura/cobertura.RData')
+load('data/cobertura/cobertura.RData')
 
 # Dados CNES --------------------------------------------------------------
 
