@@ -22,6 +22,10 @@ municipios_prioritarios <-  municipios_prioritarios %>%
   mutate(cod_ibge = str_sub(cod_ibge, end = 6))
 
 
+# Dados CNES --------------------------------------------------------------
+
+load('data/cnes.RData')
+
 # População por município -------------------------------------------------
 
 #query <- bdplyr("br_ibge_populacao.municipio")
@@ -71,4 +75,19 @@ sifilis <- sifilis %>%
 sifilis %>% 
   filter(codigo %in% municipios_prioritarios$cod_ibge) %>% 
   left_join(., pop, by = c('codigo' = 'id_municipio', 'ano' = 'ano')) %>% 
-  mutate(casos100k = casos*100000/populacao)
+  mutate(casos100k = casos*100000/populacao) %>% 
+  write_csv(., file = 'out/data/casos100k.csv')
+
+sifilis %>% 
+  filter(codigo %in% municipios_prioritarios$cod_ibge) %>% 
+  left_join(., pop, by = c('codigo' = 'id_municipio', 'ano' = 'ano')) %>% 
+  mutate(casos100k = casos*100000/populacao) %>% 
+  ggplot(aes(x = as.numeric(ano), y = casos100k, grp = codigo)) +
+  geom_line(alpha = 0.3, color = 'dodgerblue') +
+  labs(title = 'Casos por 100 mil habitantes nos municípios prioritários' ,
+       x = NULL, y = 'Casos/100 mil hab.')
+
+
+# Unidades de saúde no município ------------------------------------------
+
+s
