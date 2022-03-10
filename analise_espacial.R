@@ -120,3 +120,11 @@ cnes %>%
   write_csv(., file = 'out/data/unidades_por_municipio.csv')
 
 
+# Cobertura da atenção básica ---------------------------------------------
+
+write_csv(cobertura, file = 'out/data/cobertura.csv')
+
+
+# Quantidade de unidades de saúde que participaram do PMAQ ----------------
+
+
