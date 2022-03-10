@@ -90,4 +90,12 @@ sifilis %>%
 
 # Unidades de saúde no município ------------------------------------------
 
-s
+cnes %>% 
+  filter(CO_MUNICIPIO_GESTOR %in% municipios_prioritarios$cod_ibge,
+         CO_TIPO_ESTABELECIMENTO == 1) %>% 
+  left_join(., municipios_prioritarios, by = c('CO_MUNICIPIO_GESTOR' = 'cod_ibge')) %>% 
+  group_by(municipio) %>% 
+  count() %>% 
+  write_csv(., file = 'out/data/unidades_por_municipio.csv')
+  
+  
