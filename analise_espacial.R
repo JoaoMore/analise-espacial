@@ -162,3 +162,33 @@ qte.pmaq3 <- pmaq3 %>%
 list(qte.pmaq1, qte.pmaq2, qte.pmaq3) %>% 
   reduce(full_join, by = c('municipio','IBGE')) %>% 
   write_csv(., file = 'out/data/participantes_pmaq.csv')
+
+
+# Disponibilidade da caderneta da gestante --------------------------------
+
+##pmaq 1
+pmaq1 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I_13_1) %>% 
+  group_by(IBGE) %>% 
+  count(I_13_1) %>% 
+  complete(IBGE, I_13_1 = 1:3, fill = list(n = 0))
+
+##pmaq 2
+pmaq2 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge, Aplicação_AE == 1) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I_13_2) %>% 
+  group_by(IBGE) %>% 
+  count(I_13_2) %>% 
+  complete(IBGE, I_13_2 = as.character(1:3), fill = list(n = 0))
+
+##pmaq 3
+pmaq3 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge, APLICADO_UBS == 1) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I.9.2) %>% 
+  group_by(IBGE) %>% 
+  count(I.9.2) %>% 
+  complete(IBGE, I.9.2 = 1:2, fill = list(n = 0))
