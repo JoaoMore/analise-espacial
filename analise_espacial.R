@@ -7,6 +7,8 @@ library(data.table)
 #set_billing_id(Sys.getenv("billing_project_id"))
 #library(gitignore)
 #gi_write_gitignore(gi_fetch_templates("R"))
+theme_set(theme_minimal())
+
 
 # Municípios prioritários -------------------------------------------------
 
@@ -18,7 +20,7 @@ municipios_prioritarios <- read_excel("data/municipios_prioritarios.xlsx",
 
 municipios_prioritarios <-  municipios_prioritarios %>% 
   mutate(cod_ibge = str_sub(cod_ibge, end = 6))
-  
+
 
 # População por município -------------------------------------------------
 
@@ -26,8 +28,10 @@ municipios_prioritarios <-  municipios_prioritarios %>%
 #pop <- bd_collect(query)
 load('data/populacao.RData')
 #save(pop, file = 'data/populacao.RData')
-pop %>% 
-  mutate(id_municipio = str_sub(id_municipio, end = 6))
+pop <- pop %>% 
+  mutate(id_municipio = str_sub(id_municipio, end = 6),
+         ano = as.character(ano)) %>% 
+  filter(id_municipio %in% municipios_prioritarios$cod_ibge)
 
 # Dados PMAQ --------------------------------------------------------------
 
@@ -65,4 +69,6 @@ sifilis <- sifilis %>%
 # Numero de infectados por 100k habitantes --------------------------------
 
 sifilis %>% 
-  filter(codigo %in%)
+  filter(codigo %in% municipios_prioritarios$cod_ibge) %>% 
+  left_join(., pop, by = c('codigo' = 'id_municipio', 'ano' = 'ano')) %>% 
+  mutate(casos100k = casos*100000/populacao)
