@@ -16,12 +16,18 @@ municipios_prioritarios <- read_excel("data/municipios_prioritarios.xlsx",
                                       col_names = c('uf','cod_uf','cod_mun','cod_ibge','municipio','pop'), 
                                       skip = 1)
 
+municipios_prioritarios <-  municipios_prioritarios %>% 
+  mutate(cod_ibge = str_sub(cod_ibge, end = 6))
+  
+
 # População por município -------------------------------------------------
 
 #query <- bdplyr("br_ibge_populacao.municipio")
 #pop <- bd_collect(query)
 load('data/populacao.RData')
 #save(pop, file = 'data/populacao.RData')
+pop %>% 
+  mutate(id_municipio = str_sub(id_municipio, end = 6))
 
 # Dados PMAQ --------------------------------------------------------------
 
@@ -55,4 +61,8 @@ sifilis <- sifilis %>%
   separate(municipio, into = c('codigo', 'municipio'), sep = " ", extra = 'merge') %>% 
   pivot_longer(cols = y2010:y2021, names_to = 'ano', names_prefix = 'y', values_to = 'casos')
 
-#retirar o dígito verificador do codigo dos municípios do IBGE com 7 algarismos
+
+# Numero de infectados por 100k habitantes --------------------------------
+
+sifilis %>% 
+  filter(codigo %in%)
