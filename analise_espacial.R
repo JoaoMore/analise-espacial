@@ -67,14 +67,15 @@ pmaq1 <- fread("data/pmaq/PMAQ_1.csv",
   tibble()
 
 pmaq2 <- fread("data/pmaq/PMAQ_2.csv", 
-               select = c('CNES','IBGE','CIDADE','UF','I_13_2','I_8_6_6',
+               select = c('Aplicação_AE', 'Motivo', 'CNES','IBGE','CIDADE','UF','I_13_2','I_8_6_6',
                           'I_20_3','I_20_3_1','I_20_4','I_20_4_1',
                           'I_15_1','I_15_2','I_15_3','I_15_4')) %>% 
   tibble()
 
 
 pmaq3 <- fread('data/pmaq/PMAQ_3.csv',
-               select = c('ESTADO','IBGE','MUNICIPIO','CNES_FINAL','I.9.2',
+               select = c('APLICADO_UBS','MOTIVO_NÃO_APLICAÇÃO','ESTADO',
+                          'IBGE','MUNICIPIO','CNES_FINAL','I.9.2',
                           'I.15.1','I.15.9.3','I.15.9.4',
                           'I.11.1','I.11.2','I.11.3','I.11.4','I.11.5')) %>% 
   tibble()
@@ -123,7 +124,6 @@ cnes %>%
 # Cobertura da atenção básica ---------------------------------------------
 
 write_csv(cobertura, file = 'out/data/cobertura.csv')
-
 
 # Quantidade de unidades de saúde que participaram do PMAQ ----------------
 
