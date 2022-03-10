@@ -1,0 +1,299 @@
+municipio,IBGE,uf,c1,c2,c3,c999
+Porto Velho,110012,RO,9,2,0,0
+Rio Branco,120040,AC,50,12,5,0
+Manaus,130260,AM,200,13,12,0
+Boa Vista,140010,RR,15,16,5,0
+Belém,150140,PA,46,15,12,0
+Bragança,150170,PA,17,0,4,0
+Marabá,150420,PA,12,3,1,0
+Marituba,150442,PA,11,2,1,0
+Parauapebas,150553,PA,12,2,1,0
+Macapá,160030,AP,24,7,18,0
+Araguaína,170210,TO,17,0,0,0
+Palmas,172100,TO,27,3,3,0
+Paço do Lumiar,210750,MA,9,1,0,0
+São Luís,211130,MA,29,14,7,0
+Timon,211220,MA,33,1,3,0
+Parnaíba,220770,PI,13,9,9,0
+Teresina,221100,PI,69,9,4,0
+Caucaia,230370,CE,39,6,1,0
+Fortaleza,230440,CE,41,48,2,0
+Maracanaú,230765,CE,28,0,2,0
+Parnamirim,240325,RN,20,1,0,0
+Natal,240810,RN,49,4,0,0
+João Pessoa,250750,PB,129,15,7,0
+Santa Rita,251370,PB,36,1,5,0
+Cabo de Santo Agostinho,260290,PE,33,0,7,0
+Camaragibe,260345,PE,37,2,0,0
+Igarassu,260680,PE,30,1,0,0
+Jaboatão dos Guararapes,260790,PE,75,9,6,0
+Olinda,260960,PE,32,0,8,0
+Petrolina,261110,PE,23,18,10,0
+Recife,261160,PE,127,8,4,0
+São Lourenço da Mata,261370,PE,10,0,5,0
+Maceió,270430,AL,19,7,11,0
+Aracaju,280030,SE,40,1,2,0
+Nossa Senhora do Socorro,280480,SE,19,0,3,0
+Camaçari,290570,BA,19,13,4,0
+Porto Seguro,292530,BA,26,1,1,0
+Salvador,292740,BA,74,24,9,0
+Teixeira de Freitas,293135,BA,31,1,2,0
+Belo Horizonte,310620,MG,122,16,9,0
+Governador Valadares,312770,MG,50,4,12,0
+Juiz de Fora,313670,MG,57,2,4,0
+Ribeirão das Neves,315460,MG,56,1,0,0
+Sabará,315670,MG,15,0,0,0
+Santa Luzia,315780,MG,23,1,0,0
+Teófilo Otoni,316860,MG,16,16,6,0
+Vespasiano,317120,MG,8,0,7,0
+Cariacica,320130,ES,23,0,5,0
+Guarapari,320240,ES,15,0,6,0
+Linhares,320320,ES,25,1,3,0
+São Mateus,320490,ES,23,0,2,0
+Serra,320500,ES,24,8,2,0
+Vila Velha,320520,ES,13,1,2,0
+Vitória,320530,ES,25,0,1,0
+Belford Roxo,330045,RJ,20,4,3,0
+Duque de Caxias,330170,RJ,58,18,7,0
+Itaboraí,330190,RJ,35,2,3,0
+Magé,330250,RJ,40,17,4,0
+Maricá,330270,RJ,14,3,6,0
+Mesquita,330285,RJ,15,2,4,0
+Nilópolis,330320,RJ,6,1,0,0
+Niterói,330330,RJ,32,8,0,0
+Nova Iguaçu,330350,RJ,16,14,26,0
+Queimados,330414,RJ,8,2,3,0
+Resende,330420,RJ,26,0,0,0
+Rio de Janeiro,330455,RJ,168,8,2,1
+São Gonçalo,330490,RJ,116,10,4,0
+São João de Meriti,330510,RJ,10,4,2,0
+Bauru,350600,SP,19,0,0,0
+Botucatu,350750,SP,14,0,0,0
+Cubatão,351350,SP,13,0,0,0
+Guarujá,351870,SP,16,0,0,0
+Itapetininga,352230,SP,22,0,1,0
+Itaquaquecetuba,352310,SP,16,0,0,0
+Ourinhos,353470,SP,11,1,5,0
+Praia Grande,354100,SP,19,0,1,0
+São Paulo,355030,SP,386,29,12,0
+Almirante Tamandaré,410040,PR,10,0,0,0
+Curitiba,410690,PR,100,1,0,0
+Florianópolis,420540,SC,44,2,3,0
+Palhoça,421190,SC,17,0,2,0
+São José,421660,SC,15,0,4,0
+Alvorada,430060,RS,13,0,0,0
+Bento Gonçalves,430210,RS,20,0,2,0
+Canoas,430460,RS,24,2,5,0
+Caxias do Sul,430510,RS,41,0,3,0
+Passo Fundo,431410,RS,31,0,15,0
+Porto Alegre,431490,RS,189,11,6,0
+Rio Grande,431560,RS,22,1,6,0
+Santa Cruz do Sul,431680,RS,17,1,6,0
+Santa Maria,431690,RS,22,1,3,0
+São Leopoldo,431870,RS,16,0,1,0
+Sapucaia do Sul,432000,RS,15,1,1,0
+Viamão,432300,RS,11,0,1,0
+Campo Grande,500270,MS,55,1,2,0
+Dourados,500370,MS,30,2,0,0
+Cuiabá,510340,MT,58,0,6,0
+Goiânia,520870,GO,74,8,2,0
+Luziânia,521250,GO,12,4,12,0
+Brasília,530010,DF,119,15,11,0
+Porto Velho,110012,RO,10,0,0,NA
+Rio Branco,120040,AC,22,0,0,NA
+Manaus,130260,AM,127,8,7,NA
+Boa Vista,140010,RR,21,2,0,NA
+Belém,150140,PA,35,6,1,NA
+Bragança,150170,PA,12,0,0,NA
+Marituba,150442,PA,7,4,1,NA
+Parauapebas,150553,PA,5,0,0,NA
+Macapá,160030,AP,18,6,1,NA
+Araguaína,170210,TO,13,0,3,NA
+Palmas,172100,TO,31,1,0,NA
+Paço do Lumiar,210750,MA,3,0,0,NA
+São Luís,211130,MA,26,9,1,NA
+Timon,211220,MA,21,0,0,NA
+Parnaíba,220770,PI,27,1,0,NA
+Teresina,221100,PI,8,0,1,NA
+Caucaia,230370,CE,26,1,0,NA
+Fortaleza,230440,CE,26,3,1,NA
+Maracanaú,230765,CE,27,0,0,NA
+Parnamirim,240325,RN,20,0,0,NA
+Natal,240810,RN,25,8,1,NA
+João Pessoa,250750,PB,76,8,14,NA
+Santa Rita,251370,PB,25,3,5,NA
+Cabo de Santo Agostinho,260290,PE,34,3,0,NA
+Camaragibe,260345,PE,26,2,10,NA
+Igarassu,260680,PE,21,1,3,NA
+Jaboatão dos Guararapes,260790,PE,36,4,1,NA
+Olinda,260960,PE,31,7,1,NA
+Petrolina,261110,PE,22,4,1,NA
+Recife,261160,PE,107,6,8,NA
+São Lourenço da Mata,261370,PE,20,1,3,NA
+Maceió,270430,AL,11,6,1,NA
+Aracaju,280030,SE,25,2,2,NA
+Nossa Senhora do Socorro,280480,SE,8,0,0,NA
+Camaçari,290570,BA,6,2,3,NA
+Porto Seguro,292530,BA,32,1,0,NA
+Salvador,292740,BA,26,2,6,NA
+Teixeira de Freitas,293135,BA,33,1,0,NA
+Belo Horizonte,310620,MG,129,8,9,NA
+Governador Valadares,312770,MG,41,0,0,NA
+Juiz de Fora,313670,MG,12,0,1,NA
+Ribeirão das Neves,315460,MG,29,1,0,NA
+Sabará,315670,MG,5,0,0,NA
+Santa Luzia,315780,MG,14,2,1,NA
+Teófilo Otoni,316860,MG,24,0,0,NA
+Vespasiano,317120,MG,11,0,0,NA
+Cariacica,320130,ES,8,1,1,NA
+Guarapari,320240,ES,2,0,0,NA
+Linhares,320320,ES,18,0,0,NA
+São Mateus,320490,ES,8,0,0,NA
+Serra,320500,ES,18,1,0,NA
+Vila Velha,320520,ES,1,0,0,NA
+Vitória,320530,ES,22,0,0,NA
+Belford Roxo,330045,RJ,13,0,2,NA
+Duque de Caxias,330170,RJ,18,25,11,NA
+Itaboraí,330190,RJ,23,1,1,NA
+Magé,330250,RJ,9,1,0,NA
+Maricá,330270,RJ,14,1,1,NA
+Mesquita,330285,RJ,2,4,4,NA
+Nilópolis,330320,RJ,7,2,0,NA
+Niterói,330330,RJ,26,1,0,NA
+Nova Iguaçu,330350,RJ,24,5,2,NA
+Queimados,330414,RJ,8,1,1,NA
+Resende,330420,RJ,20,0,0,NA
+Rio de Janeiro,330455,RJ,167,5,0,NA
+São Gonçalo,330490,RJ,76,26,24,NA
+São João de Meriti,330510,RJ,13,2,0,NA
+Bauru,350600,SP,4,0,0,NA
+Botucatu,350750,SP,11,0,0,NA
+Cubatão,351350,SP,6,0,0,NA
+Guarujá,351870,SP,9,0,0,NA
+Itapetininga,352230,SP,9,0,0,NA
+Itaquaquecetuba,352310,SP,1,0,0,NA
+Ourinhos,353470,SP,2,0,2,NA
+Praia Grande,354100,SP,15,0,1,NA
+São Paulo,355030,SP,239,23,3,NA
+Almirante Tamandaré,410040,PR,6,0,0,NA
+Curitiba,410690,PR,100,1,0,NA
+Florianópolis,420540,SC,43,1,0,NA
+Palhoça,421190,SC,17,2,0,NA
+São José,421660,SC,19,0,0,NA
+Alvorada,430060,RS,13,0,0,NA
+Bento Gonçalves,430210,RS,11,0,0,NA
+Canoas,430460,RS,9,1,1,NA
+Caxias do Sul,430510,RS,22,0,0,NA
+Passo Fundo,431410,RS,15,0,0,NA
+Porto Alegre,431490,RS,121,7,3,NA
+Rio Grande,431560,RS,18,0,0,NA
+Santa Cruz do Sul,431680,RS,11,0,0,NA
+Santa Maria,431690,RS,13,0,0,NA
+São Leopoldo,431870,RS,9,0,0,NA
+Sapucaia do Sul,432000,RS,14,0,0,NA
+Campo Grande,500270,MS,34,0,0,NA
+Dourados,500370,MS,24,0,0,NA
+Cuiabá,510340,MT,30,15,5,NA
+Goiânia,520870,GO,52,3,4,NA
+Luziânia,521250,GO,11,6,0,NA
+Brasília,530010,DF,54,4,2,NA
+Porto Velho,110012,RO,12,0,NA,NA
+Rio Branco,120040,AC,37,4,NA,NA
+Manaus,130260,AM,169,10,NA,NA
+Boa Vista,140010,RR,28,4,NA,NA
+Belém,150140,PA,47,6,NA,NA
+Bragança,150170,PA,15,2,NA,NA
+Marabá,150420,PA,11,0,NA,NA
+Marituba,150442,PA,13,0,NA,NA
+Parauapebas,150553,PA,9,0,NA,NA
+Macapá,160030,AP,32,4,NA,NA
+Araguaína,170210,TO,16,1,NA,NA
+Palmas,172100,TO,30,2,NA,NA
+Paço do Lumiar,210750,MA,8,0,NA,NA
+São Luís,211130,MA,46,1,NA,NA
+Timon,211220,MA,33,0,NA,NA
+Parnaíba,220770,PI,27,5,NA,NA
+Teresina,221100,PI,23,0,NA,NA
+Caucaia,230370,CE,45,0,NA,NA
+Fortaleza,230440,CE,43,5,NA,NA
+Maracanaú,230765,CE,27,0,NA,NA
+Parnamirim,240325,RN,28,0,NA,NA
+Natal,240810,RN,40,2,NA,NA
+João Pessoa,250750,PB,97,0,NA,NA
+Santa Rita,251370,PB,28,1,NA,NA
+Cabo de Santo Agostinho,260290,PE,36,2,NA,NA
+Camaragibe,260345,PE,43,0,NA,NA
+Igarassu,260680,PE,27,2,NA,NA
+Jaboatão dos Guararapes,260790,PE,73,1,NA,NA
+Olinda,260960,PE,29,10,NA,NA
+Petrolina,261110,PE,38,1,NA,NA
+Recife,261160,PE,55,15,NA,NA
+São Lourenço da Mata,261370,PE,7,10,NA,NA
+Maceió,270430,AL,34,1,NA,NA
+Aracaju,280030,SE,42,1,NA,NA
+Nossa Senhora do Socorro,280480,SE,14,2,NA,NA
+Camaçari,290570,BA,8,1,NA,NA
+Porto Seguro,292530,BA,25,0,NA,NA
+Salvador,292740,BA,38,5,NA,NA
+Teixeira de Freitas,293135,BA,33,0,NA,NA
+Belo Horizonte,310620,MG,114,8,NA,NA
+Governador Valadares,312770,MG,42,0,NA,NA
+Juiz de Fora,313670,MG,28,9,NA,NA
+Ribeirão das Neves,315460,MG,43,6,NA,NA
+Sabará,315670,MG,6,0,NA,NA
+Santa Luzia,315780,MG,25,0,NA,NA
+Teófilo Otoni,316860,MG,29,3,NA,NA
+Vespasiano,317120,MG,8,0,NA,NA
+Cariacica,320130,ES,4,1,NA,NA
+Guarapari,320240,ES,13,1,NA,NA
+Linhares,320320,ES,19,0,NA,NA
+São Mateus,320490,ES,13,0,NA,NA
+Serra,320500,ES,20,1,NA,NA
+Vila Velha,320520,ES,7,1,NA,NA
+Vitória,320530,ES,19,1,NA,NA
+Belford Roxo,330045,RJ,12,5,NA,NA
+Duque de Caxias,330170,RJ,18,2,NA,NA
+Itaboraí,330190,RJ,32,2,NA,NA
+Magé,330250,RJ,12,0,NA,NA
+Maricá,330270,RJ,17,0,NA,NA
+Mesquita,330285,RJ,12,0,NA,NA
+Nilópolis,330320,RJ,9,0,NA,NA
+Niterói,330330,RJ,30,6,NA,NA
+Nova Iguaçu,330350,RJ,37,3,NA,NA
+Queimados,330414,RJ,10,0,NA,NA
+Resende,330420,RJ,10,0,NA,NA
+Rio de Janeiro,330455,RJ,188,2,NA,NA
+São Gonçalo,330490,RJ,99,9,NA,NA
+São João de Meriti,330510,RJ,15,0,NA,NA
+Bauru,350600,SP,6,1,NA,NA
+Botucatu,350750,SP,14,0,NA,NA
+Cubatão,351350,SP,6,0,NA,NA
+Guarujá,351870,SP,10,0,NA,NA
+Itapetininga,352230,SP,7,1,NA,NA
+Itaquaquecetuba,352310,SP,6,0,NA,NA
+Ourinhos,353470,SP,5,0,NA,NA
+Praia Grande,354100,SP,18,3,NA,NA
+São Paulo,355030,SP,263,3,NA,NA
+Almirante Tamandaré,410040,PR,3,0,NA,NA
+Curitiba,410690,PR,89,0,NA,NA
+Florianópolis,420540,SC,47,0,NA,NA
+Palhoça,421190,SC,20,1,NA,NA
+São José,421660,SC,17,0,NA,NA
+Alvorada,430060,RS,14,1,NA,NA
+Bento Gonçalves,430210,RS,11,0,NA,NA
+Canoas,430460,RS,22,2,NA,NA
+Caxias do Sul,430510,RS,18,0,NA,NA
+Passo Fundo,431410,RS,13,0,NA,NA
+Porto Alegre,431490,RS,126,3,NA,NA
+Rio Grande,431560,RS,22,0,NA,NA
+Santa Cruz do Sul,431680,RS,16,0,NA,NA
+Santa Maria,431690,RS,13,0,NA,NA
+São Leopoldo,431870,RS,10,0,NA,NA
+Sapucaia do Sul,432000,RS,17,0,NA,NA
+Viamão,432300,RS,12,0,NA,NA
+Campo Grande,500270,MS,33,0,NA,NA
+Dourados,500370,MS,25,2,NA,NA
+Cuiabá,510340,MT,44,1,NA,NA
+Goiânia,520870,GO,60,1,NA,NA
+Luziânia,521250,GO,17,2,NA,NA
+Brasília,530010,DF,58,13,NA,NA

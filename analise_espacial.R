@@ -167,28 +167,40 @@ list(qte.pmaq1, qte.pmaq2, qte.pmaq3) %>%
 # Disponibilidade da caderneta da gestante --------------------------------
 
 ##pmaq 1
-pmaq1 %>% 
+cad1 <- pmaq1 %>% 
   filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
   mutate(IBGE = as.character(IBGE)) %>% 
   select(IBGE, I_13_1) %>% 
   group_by(IBGE) %>% 
   count(I_13_1) %>% 
-  complete(IBGE, I_13_1 = 1:3, fill = list(n = 0))
+  complete(IBGE, I_13_1 = c(1,2,3,999), fill = list(n = 0)) %>% 
+  pivot_wider(names_from = I_13_1, values_from = n, names_prefix = 'c') %>% 
+  mutate(ciclo = 'Ciclo 1')
 
 ##pmaq 2
-pmaq2 %>% 
+cad2 <- pmaq2 %>% 
   filter(IBGE %in% municipios_prioritarios$cod_ibge, Aplicação_AE == 1) %>% 
   mutate(IBGE = as.character(IBGE)) %>% 
   select(IBGE, I_13_2) %>% 
   group_by(IBGE) %>% 
   count(I_13_2) %>% 
-  complete(IBGE, I_13_2 = as.character(1:3), fill = list(n = 0))
+  complete(IBGE, I_13_2 = as.character(1:3), fill = list(n = 0)) %>% 
+  pivot_wider(names_from = I_13_2, values_from = n, names_prefix = 'c') %>% 
+  mutate(ciclo = 'Ciclo 2')
 
 ##pmaq 3
-pmaq3 %>% 
+cad3 <- pmaq3 %>% 
   filter(IBGE %in% municipios_prioritarios$cod_ibge, APLICADO_UBS == 1) %>% 
   mutate(IBGE = as.character(IBGE)) %>% 
   select(IBGE, I.9.2) %>% 
   group_by(IBGE) %>% 
   count(I.9.2) %>% 
-  complete(IBGE, I.9.2 = 1:2, fill = list(n = 0))
+  complete(IBGE, I.9.2 = 1:2, fill = list(n = 0)) %>% 
+  pivot_wider(names_from = I.9.2, values_from = n, names_prefix = 'c') %>% 
+  mutate(ciclo = 'Ciclo 3')
+
+bind_rows(cad1, cad2, cad3) %>% 
+  left_join(., municipios_prioritarios, by = c('IBGE' = 'cod_ibge')) %>% 
+  select(municipio, IBGE, uf, c1:c999) %>% 
+  write_csv(., file = 'out/data/caderneta_gestante.csv')
+  
