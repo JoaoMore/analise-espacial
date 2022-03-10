@@ -67,7 +67,8 @@ pmaq1 <- fread("data/pmaq/PMAQ_1.csv",
   tibble()
 
 pmaq2 <- fread("data/pmaq/PMAQ_2.csv", 
-               select = c('Aplicação_AE', 'Motivo', 'CNES','IBGE','CIDADE','UF','I_13_2','I_8_6_6',
+               select = c('Aplicação_AE', 'Motivo', 'CNES','IBGE','CIDADE','UF',
+                          'I_13_2','I_8_6_6',
                           'I_20_3','I_20_3_1','I_20_4','I_20_4_1',
                           'I_15_1','I_15_2','I_15_3','I_15_4')) %>% 
   tibble()
@@ -201,6 +202,46 @@ cad3 <- pmaq3 %>%
 
 bind_rows(cad1, cad2, cad3) %>% 
   left_join(., municipios_prioritarios, by = c('IBGE' = 'cod_ibge')) %>% 
-  select(municipio, IBGE, uf, c1:c999) %>% 
+  select(municipio, IBGE, uf, c1:c999, ciclo) %>% 
   write_csv(., file = 'out/data/caderneta_gestante.csv')
-  
+
+
+# Dispensação de medicamentos ---------------------------------------------
+
+##pmaq 1
+med1 <- pmaq1 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I_7_8_4) %>% 
+  group_by(IBGE) %>% 
+  count(I_7_8_4) %>% 
+  complete(IBGE, I_7_8_4 = 1:2, fill = list(n = 0)) %>% 
+  pivot_wider(names_from = I_7_8_4, values_from = n, names_prefix = 'c') %>% 
+  mutate(ciclo = 'Ciclo 1')
+
+##pmaq 2
+med2 <- pmaq2 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge, Aplicação_AE == 1) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I_8_6_6) %>% 
+  group_by(IBGE) %>% 
+  count(I_8_6_6) %>% 
+  complete(IBGE, I_8_6_6 = as.character(1:2), fill = list(n = 0)) %>% 
+  pivot_wider(names_from = I_8_6_6, values_from = n, names_prefix = 'c') %>% 
+  mutate(ciclo = 'Ciclo 2')
+
+##pmaq 3
+med3 <- pmaq3 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge, APLICADO_UBS == 1) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I.15.1) %>% 
+  group_by(IBGE) %>% 
+  count(I.15.1) %>% 
+  complete(IBGE, I.15.1 = 1:2, fill = list(n = 0)) %>% 
+  pivot_wider(names_from = I.15.1, values_from = n, names_prefix = 'c') %>% 
+  mutate(ciclo = 'Ciclo 3')
+
+bind_rows(med1, med2, med3) %>% 
+  left_join(., municipios_prioritarios, by = c('IBGE' = 'cod_ibge')) %>% 
+  select(municipio, IBGE, uf, c1:c2, ciclo) %>% 
+  write_csv(., file = 'out/data/dispensacao_medicamentos.csv')

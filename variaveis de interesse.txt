@@ -1,5 +1,24 @@
-caderneta da gestante
+Caderneta da gestante
 PMAQ1 - I.13.1
 PMAQ2 - I.13.2
 PMAQ3 - I.9.2
 
+Dispensação de medicamentos
+PMAQ1 - I.7.8.4
+PMAQ2 - I.8.6.6
+PMAQ3 - I.15.1
+
+Benzilpenicilina benzatina
+PMAQ1 - I.14.46; I.14.46.1
+PMAQ2 - I.20.3; I.20.3.1
+PMAQ3 - I.15.9.3
+
+Benzilpenicilina potássica+procaína
+PMAQ1 - I.14.47; I.14.47.1
+PMAQ2 - I.20.4; I.20.3.4
+PMAQ3 - I.15.9.4
+
+Teste diagnóstico (sífilis, gravidez, HIV/ hepatite B, hepatite C)
+PMAQ1 - I.16.1-I.16.3
+PMAQ2 - I.15.1-I.15.3 
+PMAQ3 - I.11.1-1.11.5

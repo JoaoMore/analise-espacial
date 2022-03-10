@@ -1,0 +1,299 @@
+municipio,IBGE,uf,c1,c2,ciclo
+Porto Velho,110012,RO,10,1,Ciclo 1
+Rio Branco,120040,AC,63,4,Ciclo 1
+Manaus,130260,AM,211,14,Ciclo 1
+Boa Vista,140010,RR,34,2,Ciclo 1
+Belém,150140,PA,61,12,Ciclo 1
+Bragança,150170,PA,20,1,Ciclo 1
+Marabá,150420,PA,15,1,Ciclo 1
+Marituba,150442,PA,12,2,Ciclo 1
+Parauapebas,150553,PA,14,1,Ciclo 1
+Macapá,160030,AP,43,6,Ciclo 1
+Araguaína,170210,TO,7,10,Ciclo 1
+Palmas,172100,TO,9,24,Ciclo 1
+Paço do Lumiar,210750,MA,10,0,Ciclo 1
+São Luís,211130,MA,46,4,Ciclo 1
+Timon,211220,MA,32,5,Ciclo 1
+Parnaíba,220770,PI,30,1,Ciclo 1
+Teresina,221100,PI,80,2,Ciclo 1
+Caucaia,230370,CE,44,2,Ciclo 1
+Fortaleza,230440,CE,90,1,Ciclo 1
+Maracanaú,230765,CE,29,1,Ciclo 1
+Parnamirim,240325,RN,21,0,Ciclo 1
+Natal,240810,RN,50,3,Ciclo 1
+João Pessoa,250750,PB,150,1,Ciclo 1
+Santa Rita,251370,PB,38,4,Ciclo 1
+Cabo de Santo Agostinho,260290,PE,40,0,Ciclo 1
+Camaragibe,260345,PE,39,0,Ciclo 1
+Igarassu,260680,PE,30,1,Ciclo 1
+Jaboatão dos Guararapes,260790,PE,90,0,Ciclo 1
+Olinda,260960,PE,40,0,Ciclo 1
+Petrolina,261110,PE,50,1,Ciclo 1
+Recife,261160,PE,105,34,Ciclo 1
+São Lourenço da Mata,261370,PE,14,1,Ciclo 1
+Maceió,270430,AL,35,2,Ciclo 1
+Aracaju,280030,SE,43,0,Ciclo 1
+Nossa Senhora do Socorro,280480,SE,22,0,Ciclo 1
+Camaçari,290570,BA,34,2,Ciclo 1
+Porto Seguro,292530,BA,27,1,Ciclo 1
+Salvador,292740,BA,102,5,Ciclo 1
+Teixeira de Freitas,293135,BA,34,0,Ciclo 1
+Belo Horizonte,310620,MG,147,0,Ciclo 1
+Governador Valadares,312770,MG,60,6,Ciclo 1
+Juiz de Fora,313670,MG,62,1,Ciclo 1
+Ribeirão das Neves,315460,MG,55,2,Ciclo 1
+Sabará,315670,MG,13,2,Ciclo 1
+Santa Luzia,315780,MG,2,22,Ciclo 1
+Teófilo Otoni,316860,MG,0,38,Ciclo 1
+Vespasiano,317120,MG,14,1,Ciclo 1
+Cariacica,320130,ES,27,1,Ciclo 1
+Guarapari,320240,ES,20,1,Ciclo 1
+Linhares,320320,ES,28,1,Ciclo 1
+São Mateus,320490,ES,25,0,Ciclo 1
+Serra,320500,ES,33,1,Ciclo 1
+Vila Velha,320520,ES,16,0,Ciclo 1
+Vitória,320530,ES,25,1,Ciclo 1
+Belford Roxo,330045,RJ,24,3,Ciclo 1
+Duque de Caxias,330170,RJ,8,75,Ciclo 1
+Itaboraí,330190,RJ,39,1,Ciclo 1
+Magé,330250,RJ,56,5,Ciclo 1
+Maricá,330270,RJ,21,2,Ciclo 1
+Mesquita,330285,RJ,3,18,Ciclo 1
+Nilópolis,330320,RJ,7,0,Ciclo 1
+Niterói,330330,RJ,38,2,Ciclo 1
+Nova Iguaçu,330350,RJ,48,8,Ciclo 1
+Queimados,330414,RJ,5,8,Ciclo 1
+Resende,330420,RJ,26,0,Ciclo 1
+Rio de Janeiro,330455,RJ,178,1,Ciclo 1
+São Gonçalo,330490,RJ,126,4,Ciclo 1
+São João de Meriti,330510,RJ,16,0,Ciclo 1
+Bauru,350600,SP,19,0,Ciclo 1
+Botucatu,350750,SP,13,1,Ciclo 1
+Cubatão,351350,SP,11,2,Ciclo 1
+Guarujá,351870,SP,15,1,Ciclo 1
+Itapetininga,352230,SP,22,1,Ciclo 1
+Itaquaquecetuba,352310,SP,16,0,Ciclo 1
+Ourinhos,353470,SP,16,1,Ciclo 1
+Praia Grande,354100,SP,19,1,Ciclo 1
+São Paulo,355030,SP,417,10,Ciclo 1
+Almirante Tamandaré,410040,PR,9,1,Ciclo 1
+Curitiba,410690,PR,101,0,Ciclo 1
+Florianópolis,420540,SC,48,1,Ciclo 1
+Palhoça,421190,SC,18,1,Ciclo 1
+São José,421660,SC,19,0,Ciclo 1
+Alvorada,430060,RS,2,11,Ciclo 1
+Bento Gonçalves,430210,RS,20,2,Ciclo 1
+Canoas,430460,RS,6,25,Ciclo 1
+Caxias do Sul,430510,RS,40,4,Ciclo 1
+Passo Fundo,431410,RS,10,36,Ciclo 1
+Porto Alegre,431490,RS,192,14,Ciclo 1
+Rio Grande,431560,RS,28,1,Ciclo 1
+Santa Cruz do Sul,431680,RS,23,1,Ciclo 1
+Santa Maria,431690,RS,25,1,Ciclo 1
+São Leopoldo,431870,RS,3,14,Ciclo 1
+Sapucaia do Sul,432000,RS,4,13,Ciclo 1
+Viamão,432300,RS,7,5,Ciclo 1
+Campo Grande,500270,MS,57,1,Ciclo 1
+Dourados,500370,MS,9,23,Ciclo 1
+Cuiabá,510340,MT,62,2,Ciclo 1
+Goiânia,520870,GO,62,22,Ciclo 1
+Luziânia,521250,GO,21,7,Ciclo 1
+Brasília,530010,DF,139,6,Ciclo 1
+Porto Velho,110012,RO,7,3,Ciclo 2
+Rio Branco,120040,AC,22,0,Ciclo 2
+Manaus,130260,AM,130,12,Ciclo 2
+Boa Vista,140010,RR,23,0,Ciclo 2
+Belém,150140,PA,31,11,Ciclo 2
+Bragança,150170,PA,12,0,Ciclo 2
+Marituba,150442,PA,10,2,Ciclo 2
+Parauapebas,150553,PA,5,0,Ciclo 2
+Macapá,160030,AP,24,1,Ciclo 2
+Araguaína,170210,TO,12,4,Ciclo 2
+Palmas,172100,TO,8,24,Ciclo 2
+Paço do Lumiar,210750,MA,3,0,Ciclo 2
+São Luís,211130,MA,36,0,Ciclo 2
+Timon,211220,MA,21,0,Ciclo 2
+Parnaíba,220770,PI,28,0,Ciclo 2
+Teresina,221100,PI,9,0,Ciclo 2
+Caucaia,230370,CE,26,1,Ciclo 2
+Fortaleza,230440,CE,29,1,Ciclo 2
+Maracanaú,230765,CE,27,0,Ciclo 2
+Parnamirim,240325,RN,20,0,Ciclo 2
+Natal,240810,RN,34,0,Ciclo 2
+João Pessoa,250750,PB,98,0,Ciclo 2
+Santa Rita,251370,PB,31,2,Ciclo 2
+Cabo de Santo Agostinho,260290,PE,35,2,Ciclo 2
+Camaragibe,260345,PE,38,0,Ciclo 2
+Igarassu,260680,PE,25,0,Ciclo 2
+Jaboatão dos Guararapes,260790,PE,41,0,Ciclo 2
+Olinda,260960,PE,39,0,Ciclo 2
+Petrolina,261110,PE,27,0,Ciclo 2
+Recife,261160,PE,93,28,Ciclo 2
+São Lourenço da Mata,261370,PE,24,0,Ciclo 2
+Maceió,270430,AL,18,0,Ciclo 2
+Aracaju,280030,SE,29,0,Ciclo 2
+Nossa Senhora do Socorro,280480,SE,7,1,Ciclo 2
+Camaçari,290570,BA,10,1,Ciclo 2
+Porto Seguro,292530,BA,33,0,Ciclo 2
+Salvador,292740,BA,32,2,Ciclo 2
+Teixeira de Freitas,293135,BA,34,0,Ciclo 2
+Belo Horizonte,310620,MG,146,0,Ciclo 2
+Governador Valadares,312770,MG,41,0,Ciclo 2
+Juiz de Fora,313670,MG,13,0,Ciclo 2
+Ribeirão das Neves,315460,MG,30,0,Ciclo 2
+Sabará,315670,MG,4,1,Ciclo 2
+Santa Luzia,315780,MG,1,16,Ciclo 2
+Teófilo Otoni,316860,MG,0,24,Ciclo 2
+Vespasiano,317120,MG,10,1,Ciclo 2
+Cariacica,320130,ES,10,0,Ciclo 2
+Guarapari,320240,ES,2,0,Ciclo 2
+Linhares,320320,ES,18,0,Ciclo 2
+São Mateus,320490,ES,8,0,Ciclo 2
+Serra,320500,ES,18,1,Ciclo 2
+Vila Velha,320520,ES,1,0,Ciclo 2
+Vitória,320530,ES,21,1,Ciclo 2
+Belford Roxo,330045,RJ,15,0,Ciclo 2
+Duque de Caxias,330170,RJ,14,40,Ciclo 2
+Itaboraí,330190,RJ,25,0,Ciclo 2
+Magé,330250,RJ,6,4,Ciclo 2
+Maricá,330270,RJ,16,0,Ciclo 2
+Mesquita,330285,RJ,1,9,Ciclo 2
+Nilópolis,330320,RJ,7,2,Ciclo 2
+Niterói,330330,RJ,27,0,Ciclo 2
+Nova Iguaçu,330350,RJ,30,1,Ciclo 2
+Queimados,330414,RJ,0,10,Ciclo 2
+Resende,330420,RJ,20,0,Ciclo 2
+Rio de Janeiro,330455,RJ,171,1,Ciclo 2
+São Gonçalo,330490,RJ,123,3,Ciclo 2
+São João de Meriti,330510,RJ,2,13,Ciclo 2
+Bauru,350600,SP,4,0,Ciclo 2
+Botucatu,350750,SP,11,0,Ciclo 2
+Cubatão,351350,SP,5,1,Ciclo 2
+Guarujá,351870,SP,9,0,Ciclo 2
+Itapetininga,352230,SP,9,0,Ciclo 2
+Itaquaquecetuba,352310,SP,1,0,Ciclo 2
+Ourinhos,353470,SP,4,0,Ciclo 2
+Praia Grande,354100,SP,16,0,Ciclo 2
+São Paulo,355030,SP,262,3,Ciclo 2
+Almirante Tamandaré,410040,PR,6,0,Ciclo 2
+Curitiba,410690,PR,101,0,Ciclo 2
+Florianópolis,420540,SC,44,0,Ciclo 2
+Palhoça,421190,SC,19,0,Ciclo 2
+São José,421660,SC,18,1,Ciclo 2
+Alvorada,430060,RS,4,9,Ciclo 2
+Bento Gonçalves,430210,RS,11,0,Ciclo 2
+Canoas,430460,RS,2,9,Ciclo 2
+Caxias do Sul,430510,RS,22,0,Ciclo 2
+Passo Fundo,431410,RS,2,13,Ciclo 2
+Porto Alegre,431490,RS,129,2,Ciclo 2
+Rio Grande,431560,RS,17,1,Ciclo 2
+Santa Cruz do Sul,431680,RS,10,1,Ciclo 2
+Santa Maria,431690,RS,12,1,Ciclo 2
+São Leopoldo,431870,RS,0,9,Ciclo 2
+Sapucaia do Sul,432000,RS,5,9,Ciclo 2
+Campo Grande,500270,MS,34,0,Ciclo 2
+Dourados,500370,MS,8,16,Ciclo 2
+Cuiabá,510340,MT,50,0,Ciclo 2
+Goiânia,520870,GO,30,29,Ciclo 2
+Luziânia,521250,GO,17,0,Ciclo 2
+Brasília,530010,DF,53,7,Ciclo 2
+Porto Velho,110012,RO,5,7,Ciclo 3
+Rio Branco,120040,AC,40,1,Ciclo 3
+Manaus,130260,AM,174,5,Ciclo 3
+Boa Vista,140010,RR,32,0,Ciclo 3
+Belém,150140,PA,35,18,Ciclo 3
+Bragança,150170,PA,17,0,Ciclo 3
+Marabá,150420,PA,11,0,Ciclo 3
+Marituba,150442,PA,12,1,Ciclo 3
+Parauapebas,150553,PA,9,0,Ciclo 3
+Macapá,160030,AP,34,2,Ciclo 3
+Araguaína,170210,TO,16,1,Ciclo 3
+Palmas,172100,TO,10,22,Ciclo 3
+Paço do Lumiar,210750,MA,8,0,Ciclo 3
+São Luís,211130,MA,47,0,Ciclo 3
+Timon,211220,MA,33,0,Ciclo 3
+Parnaíba,220770,PI,32,0,Ciclo 3
+Teresina,221100,PI,23,0,Ciclo 3
+Caucaia,230370,CE,45,0,Ciclo 3
+Fortaleza,230440,CE,48,0,Ciclo 3
+Maracanaú,230765,CE,27,0,Ciclo 3
+Parnamirim,240325,RN,28,0,Ciclo 3
+Natal,240810,RN,42,0,Ciclo 3
+João Pessoa,250750,PB,50,47,Ciclo 3
+Santa Rita,251370,PB,4,25,Ciclo 3
+Cabo de Santo Agostinho,260290,PE,38,0,Ciclo 3
+Camaragibe,260345,PE,43,0,Ciclo 3
+Igarassu,260680,PE,29,0,Ciclo 3
+Jaboatão dos Guararapes,260790,PE,73,1,Ciclo 3
+Olinda,260960,PE,39,0,Ciclo 3
+Petrolina,261110,PE,39,0,Ciclo 3
+Recife,261160,PE,57,13,Ciclo 3
+São Lourenço da Mata,261370,PE,17,0,Ciclo 3
+Maceió,270430,AL,33,2,Ciclo 3
+Aracaju,280030,SE,42,1,Ciclo 3
+Nossa Senhora do Socorro,280480,SE,16,0,Ciclo 3
+Camaçari,290570,BA,4,5,Ciclo 3
+Porto Seguro,292530,BA,25,0,Ciclo 3
+Salvador,292740,BA,42,1,Ciclo 3
+Teixeira de Freitas,293135,BA,33,0,Ciclo 3
+Belo Horizonte,310620,MG,122,0,Ciclo 3
+Governador Valadares,312770,MG,14,28,Ciclo 3
+Juiz de Fora,313670,MG,36,1,Ciclo 3
+Ribeirão das Neves,315460,MG,46,3,Ciclo 3
+Sabará,315670,MG,6,0,Ciclo 3
+Santa Luzia,315780,MG,0,25,Ciclo 3
+Teófilo Otoni,316860,MG,1,31,Ciclo 3
+Vespasiano,317120,MG,8,0,Ciclo 3
+Cariacica,320130,ES,4,1,Ciclo 3
+Guarapari,320240,ES,0,14,Ciclo 3
+Linhares,320320,ES,14,5,Ciclo 3
+São Mateus,320490,ES,13,0,Ciclo 3
+Serra,320500,ES,21,0,Ciclo 3
+Vila Velha,320520,ES,8,0,Ciclo 3
+Vitória,320530,ES,20,0,Ciclo 3
+Belford Roxo,330045,RJ,1,16,Ciclo 3
+Duque de Caxias,330170,RJ,2,18,Ciclo 3
+Itaboraí,330190,RJ,34,0,Ciclo 3
+Magé,330250,RJ,0,12,Ciclo 3
+Maricá,330270,RJ,17,0,Ciclo 3
+Mesquita,330285,RJ,0,12,Ciclo 3
+Nilópolis,330320,RJ,9,0,Ciclo 3
+Niterói,330330,RJ,36,0,Ciclo 3
+Nova Iguaçu,330350,RJ,39,1,Ciclo 3
+Queimados,330414,RJ,0,10,Ciclo 3
+Resende,330420,RJ,10,0,Ciclo 3
+Rio de Janeiro,330455,RJ,190,0,Ciclo 3
+São Gonçalo,330490,RJ,2,106,Ciclo 3
+São João de Meriti,330510,RJ,9,6,Ciclo 3
+Bauru,350600,SP,5,2,Ciclo 3
+Botucatu,350750,SP,14,0,Ciclo 3
+Cubatão,351350,SP,6,0,Ciclo 3
+Guarujá,351870,SP,10,0,Ciclo 3
+Itapetininga,352230,SP,8,0,Ciclo 3
+Itaquaquecetuba,352310,SP,6,0,Ciclo 3
+Ourinhos,353470,SP,5,0,Ciclo 3
+Praia Grande,354100,SP,21,0,Ciclo 3
+São Paulo,355030,SP,263,3,Ciclo 3
+Almirante Tamandaré,410040,PR,3,0,Ciclo 3
+Curitiba,410690,PR,89,0,Ciclo 3
+Florianópolis,420540,SC,47,0,Ciclo 3
+Palhoça,421190,SC,21,0,Ciclo 3
+São José,421660,SC,17,0,Ciclo 3
+Alvorada,430060,RS,1,14,Ciclo 3
+Bento Gonçalves,430210,RS,11,0,Ciclo 3
+Canoas,430460,RS,2,22,Ciclo 3
+Caxias do Sul,430510,RS,18,0,Ciclo 3
+Passo Fundo,431410,RS,3,10,Ciclo 3
+Porto Alegre,431490,RS,124,5,Ciclo 3
+Rio Grande,431560,RS,17,5,Ciclo 3
+Santa Cruz do Sul,431680,RS,15,1,Ciclo 3
+Santa Maria,431690,RS,2,11,Ciclo 3
+São Leopoldo,431870,RS,1,9,Ciclo 3
+Sapucaia do Sul,432000,RS,4,13,Ciclo 3
+Viamão,432300,RS,6,6,Ciclo 3
+Campo Grande,500270,MS,32,1,Ciclo 3
+Dourados,500370,MS,8,19,Ciclo 3
+Cuiabá,510340,MT,44,1,Ciclo 3
+Goiânia,520870,GO,32,29,Ciclo 3
+Luziânia,521250,GO,9,10,Ciclo 3
+Brasília,530010,DF,55,16,Ciclo 3
