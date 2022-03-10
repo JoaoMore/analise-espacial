@@ -127,4 +127,38 @@ write_csv(cobertura, file = 'out/data/cobertura.csv')
 
 # Quantidade de unidades de saúde que participaram do PMAQ ----------------
 
+##pmaq 1
+qte.pmaq1 <- pmaq1 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  left_join(., municipios_prioritarios, by = c('IBGE' = 'cod_ibge')) %>% 
+  group_by(municipio, IBGE) %>% 
+  count(name = 'unidades_participantes') %>% 
+  mutate(ciclo = 'PMAQ1') %>% 
+  pivot_wider(names_from = ciclo, values_from = unidades_participantes)
 
+##pmaq 2
+qte.pmaq2 <- pmaq2 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge, Aplicação_AE == 1) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  left_join(., municipios_prioritarios, by = c('IBGE' = 'cod_ibge')) %>% 
+  group_by(municipio, IBGE) %>% 
+  count(name = 'unidades_participantes') %>% 
+  mutate(ciclo = 'PMAQ2') %>% 
+  pivot_wider(names_from = ciclo, values_from = unidades_participantes)
+
+##pmaq3
+qte.pmaq3 <- pmaq3 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge, APLICADO_UBS == 1) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  left_join(., municipios_prioritarios, by = c('IBGE' = 'cod_ibge')) %>% 
+  group_by(municipio, IBGE) %>% 
+  count(name = 'unidades_participantes') %>% 
+  mutate(ciclo = 'PMAQ3') %>% 
+  pivot_wider(names_from = ciclo, values_from = unidades_participantes)
+
+##agrupando os dados
+
+list(qte.pmaq1, qte.pmaq2, qte.pmaq3) %>% 
+  reduce(full_join, by = c('municipio','IBGE')) %>% 
+  write_csv(., file = 'out/data/participantes_pmaq.csv')
