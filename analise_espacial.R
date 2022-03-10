@@ -9,6 +9,17 @@ library(data.table)
 #gi_write_gitignore(gi_fetch_templates("R"))
 theme_set(theme_minimal())
 
+
+# Functions ---------------------------------------------------------------
+
+qte.med <- function(p1, p2) {
+  case_when(
+    p1 == 1 & p2 == 1 ~ 1,
+    p1 == 2 | p2 == 2 ~ 2,
+    TRUE ~ 998
+  )
+}
+
 # Municípios prioritários -------------------------------------------------
 
 municipios_prioritarios <- read_excel("data/municipios_prioritarios.xlsx", 
@@ -245,3 +256,87 @@ bind_rows(med1, med2, med3) %>%
   left_join(., municipios_prioritarios, by = c('IBGE' = 'cod_ibge')) %>% 
   select(municipio, IBGE, uf, c1:c2, ciclo) %>% 
   write_csv(., file = 'out/data/dispensacao_medicamentos.csv')
+
+
+# Benzilpenicilina benzatina ----------------------------------------------
+
+##pmaq1
+benza1 <- pmaq1 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I_14_46, I_14_46_1) %>% 
+  mutate(benzatina = qte.med(I_14_46, I_14_46_1)) %>% 
+  group_by(IBGE) %>% 
+  count(benzatina) %>% 
+  complete(IBGE, benzatina = c(1,2,998), fill = list(n = 0)) %>% 
+  pivot_wider(names_from = benzatina, values_from = n, names_prefix = 'benzatina_') %>% 
+  mutate(ciclo = 'Ciclo 1')
+
+##pmaq2
+benza2 <- pmaq2 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I_20_3, I_20_3_1) %>% 
+  mutate(benzatina = qte.med(I_20_3, I_20_3_1)) %>% 
+  group_by(IBGE) %>% 
+  count(benzatina) %>% 
+  complete(IBGE, benzatina = c(1,2,998), fill = list(n = 0)) %>% 
+  pivot_wider(names_from = benzatina, values_from = n, names_prefix = 'benzatina_') %>% 
+  mutate(ciclo = 'Ciclo 2')
+
+##pmaq3
+benza3 <- pmaq3 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I.15.9.3) %>%
+  group_by(IBGE) %>% 
+  count(I.15.9.3) %>% 
+  complete(IBGE, I.15.9.3 = c(1,2,998), fill = list(n = 0)) %>% 
+  pivot_wider(names_from = I.15.9.3, values_from = n, names_prefix = 'benzatina_') %>% 
+  mutate(ciclo = 'Ciclo 3')
+
+
+# Benzilpenicilina procaína + potássica -----------------------------------
+
+##pmaq1
+proca1 <- pmaq1 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I_14_47, I_14_47_1) %>% 
+  mutate(proc.pot = qte.med(I_14_47, I_14_47_1)) %>% 
+  group_by(IBGE) %>% 
+  count(proc.pot) %>% 
+  complete(IBGE, proc.pot = 1:2, fill = list(n = 0)) %>% 
+  pivot_wider(names_from = proc.pot, values_from = n, names_prefix = 'proc.pot_') %>% 
+  mutate(ciclo = 'Ciclo 1')
+
+##pmaq2
+proca2 <- pmaq2 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I_20_3, I_20_3_1) %>% 
+  mutate(proc.pot = qte.med(I_20_3, I_20_3_1)) %>% 
+  group_by(IBGE) %>% 
+  count(proc.pot) %>% 
+  complete(IBGE, proc.pot = 1:2, fill = list(n = 0)) %>% 
+  pivot_wider(names_from = proc.pot, values_from = n, names_prefix = 'proc.pot_') %>% 
+  mutate(ciclo = 'Ciclo 2')
+
+##pmaq3
+proca3 <- pmaq3 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I.15.9.3) %>%
+  group_by(IBGE) %>% 
+  count(I.15.9.3) %>% 
+  pivot_wider(names_from = I.15.9.3, values_from = n, names_prefix = 'proc.pot_') %>% 
+  mutate(ciclo = 'Ciclo 3')
+
+
+# Agrupando dados de medicamentos
+bind_rows(benza1, benza2, benza3)
+bind_rows(proca1, proca2, proca3)
+
+left_join(bind_rows(benza1, benza2, benza3) %>% ungroup(),
+          bind_rows(proca1, proca2, proca3) %>% ungroup()) %>% 
+  write_csv(., file = 'out/data/benzilpenicilina.csv')
