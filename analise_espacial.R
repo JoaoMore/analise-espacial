@@ -333,10 +333,102 @@ proca3 <- pmaq3 %>%
   mutate(ciclo = 'Ciclo 3')
 
 
-# Agrupando dados de medicamentos
+# Agrupando dados de medicamentos ----
 bind_rows(benza1, benza2, benza3)
 bind_rows(proca1, proca2, proca3)
 
 left_join(bind_rows(benza1, benza2, benza3) %>% ungroup(),
           bind_rows(proca1, proca2, proca3) %>% ungroup()) %>% 
+  left_join(., municipios_prioritarios, by = c('IBGE' = 'cod_ibge')) %>% 
+  select(uf, municipio, IBGE, benzatina_1:proc.pot_9997) %>% 
   write_csv(., file = 'out/data/benzilpenicilina.csv')
+
+
+# Testes rápidos de sífilis -----------------------------------------------
+
+##pmaq 1
+teste.s1 <- pmaq1 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
+  mutate(IBGE = as.character(IBGE), 
+         I_16_1 = ifelse(I_16_1 == 1, 1, 2)) %>% 
+  select(IBGE, I_16_1) %>% 
+  group_by(IBGE) %>% 
+  count(I_16_1) %>% 
+  complete(IBGE, I_16_1 = 1:2, fill = list(n=0)) %>% 
+  pivot_wider(names_from = I_16_1, values_from = n, names_prefix = 'c') %>% 
+  mutate(ciclo = 'Ciclo 1')
+
+##pmaq 2
+teste.s2 <- pmaq2 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
+  mutate(IBGE = as.character(IBGE), 
+         I_15_1 = ifelse(I_15_1 == 1, 1, 2)) %>% 
+  select(IBGE, I_15_1) %>% 
+  group_by(IBGE) %>% 
+  count(I_15_1) %>% 
+  complete(IBGE, I_15_1 = 1:2, fill = list(n=0)) %>% 
+  pivot_wider(names_from = I_15_1, values_from = n, names_prefix = 'c') %>% 
+  mutate(ciclo = 'Ciclo 2')
+
+##pmaq 3
+teste.s3 <- pmaq3 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I.11.1) %>% 
+  group_by(IBGE) %>% 
+  count(I.11.1) %>% 
+  complete(IBGE, I.11.1 = c(1,2,9997), fill = list(n = 0)) %>% 
+  pivot_wider(names_from = I.11.1, values_from = n, names_prefix = 'c') %>% 
+  mutate(ciclo = 'Ciclo 3')
+
+bind_rows(teste.s1, teste.s2, teste.s3) %>% 
+  left_join(., municipios_prioritarios, by = c('IBGE' = 'cod_ibge')) %>% 
+  select(IBGE, uf, municipio, c1:c9997) %>% 
+  write_csv(., file = 'out/data/testes_sifilis.csv')
+
+
+# Disponibilidade de outros medicamentos ----------------------------------
+
+##pmaq1
+outros1 <- pmaq1 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I_16_2, I_16_3) %>% 
+  rowwise() %>% 
+  mutate(outros = sum(c_across(I_16_2:I_16_3) != 1)) %>% 
+  group_by(IBGE) %>% 
+  count(outros) %>% 
+  complete(IBGE, outros = 0:2, fill = list(n=0)) %>% 
+  pivot_wider(names_from = outros, values_from = n, names_prefix = 'c') %>% 
+  mutate(ciclo = 'Ciclo 1')
+
+##pmaq2
+outros2 <- pmaq2 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I_15_2, I_15_3) %>% 
+  rowwise() %>% 
+  mutate(outros = sum(c_across(I_15_2:I_15_3) != 1)) %>% 
+  group_by(IBGE) %>% 
+  count(outros) %>% 
+  complete(IBGE, outros = 0:2, fill = list(n=0)) %>% 
+  pivot_wider(names_from = outros, values_from = n, names_prefix = 'c') %>% 
+  mutate(ciclo = 'Ciclo 2')
+
+##pmaq3
+outros3 <- pmaq3 %>% 
+  filter(IBGE %in% municipios_prioritarios$cod_ibge) %>% 
+  mutate(IBGE = as.character(IBGE)) %>% 
+  select(IBGE, I.11.2:I.11.5) %>% 
+  rowwise() %>% 
+  mutate(outros = sum(c_across(I.11.2:I.11.5) != 1)) %>% 
+  group_by(IBGE) %>% 
+  count(outros) %>% 
+  complete(IBGE, outros = 0:4, fill = list(n = 0)) %>% 
+  pivot_wider(names_from = outros, values_from = n, names_prefix = 'c') %>% 
+  mutate(ciclo = 'Ciclo 3')
+  
+bind_rows(outros1, outros2, outros3) %>% 
+  left_join(., municipios_prioritarios, by = c('IBGE' = 'cod_ibge')) %>% 
+  select(uf, municipio, IBGE, c0:c2, c3, c4, ciclo) %>% 
+  write_csv(., file = 'out/data/outros_testes.csv')

@@ -1,0 +1,299 @@
+IBGE,uf,municipio,c1,c2,ciclo,c9997
+110012,RO,Porto Velho,1,10,Ciclo 1,NA
+120040,AC,Rio Branco,4,63,Ciclo 1,NA
+130260,AM,Manaus,3,222,Ciclo 1,NA
+140010,RR,Boa Vista,16,20,Ciclo 1,NA
+150140,PA,Belém,3,70,Ciclo 1,NA
+150170,PA,Bragança,1,20,Ciclo 1,NA
+150420,PA,Marabá,0,16,Ciclo 1,NA
+150442,PA,Marituba,0,14,Ciclo 1,NA
+150553,PA,Parauapebas,1,14,Ciclo 1,NA
+160030,AP,Macapá,1,48,Ciclo 1,NA
+170210,TO,Araguaína,0,17,Ciclo 1,NA
+172100,TO,Palmas,0,33,Ciclo 1,NA
+210750,MA,Paço do Lumiar,5,5,Ciclo 1,NA
+211130,MA,São Luís,0,50,Ciclo 1,NA
+211220,MA,Timon,0,37,Ciclo 1,NA
+220770,PI,Parnaíba,0,31,Ciclo 1,NA
+221100,PI,Teresina,2,80,Ciclo 1,NA
+230370,CE,Caucaia,0,46,Ciclo 1,NA
+230440,CE,Fortaleza,2,89,Ciclo 1,NA
+230765,CE,Maracanaú,11,19,Ciclo 1,NA
+240325,RN,Parnamirim,0,21,Ciclo 1,NA
+240810,RN,Natal,6,47,Ciclo 1,NA
+250750,PB,João Pessoa,6,145,Ciclo 1,NA
+251370,PB,Santa Rita,7,35,Ciclo 1,NA
+260290,PE,Cabo de Santo Agostinho,0,40,Ciclo 1,NA
+260345,PE,Camaragibe,0,39,Ciclo 1,NA
+260680,PE,Igarassu,0,31,Ciclo 1,NA
+260790,PE,Jaboatão dos Guararapes,0,90,Ciclo 1,NA
+260960,PE,Olinda,0,40,Ciclo 1,NA
+261110,PE,Petrolina,0,51,Ciclo 1,NA
+261160,PE,Recife,1,138,Ciclo 1,NA
+261370,PE,São Lourenço da Mata,0,15,Ciclo 1,NA
+270430,AL,Maceió,0,37,Ciclo 1,NA
+280030,SE,Aracaju,1,42,Ciclo 1,NA
+280480,SE,Nossa Senhora do Socorro,0,22,Ciclo 1,NA
+290570,BA,Camaçari,0,36,Ciclo 1,NA
+292530,BA,Porto Seguro,19,9,Ciclo 1,NA
+292740,BA,Salvador,16,91,Ciclo 1,NA
+293135,BA,Teixeira de Freitas,0,34,Ciclo 1,NA
+310620,MG,Belo Horizonte,2,145,Ciclo 1,NA
+312770,MG,Governador Valadares,1,65,Ciclo 1,NA
+313670,MG,Juiz de Fora,0,63,Ciclo 1,NA
+315460,MG,Ribeirão das Neves,3,54,Ciclo 1,NA
+315670,MG,Sabará,0,15,Ciclo 1,NA
+315780,MG,Santa Luzia,0,24,Ciclo 1,NA
+316860,MG,Teófilo Otoni,0,38,Ciclo 1,NA
+317120,MG,Vespasiano,0,15,Ciclo 1,NA
+320130,ES,Cariacica,1,27,Ciclo 1,NA
+320240,ES,Guarapari,1,20,Ciclo 1,NA
+320320,ES,Linhares,0,29,Ciclo 1,NA
+320490,ES,São Mateus,0,25,Ciclo 1,NA
+320500,ES,Serra,1,33,Ciclo 1,NA
+320520,ES,Vila Velha,0,16,Ciclo 1,NA
+320530,ES,Vitória,0,26,Ciclo 1,NA
+330045,RJ,Belford Roxo,0,27,Ciclo 1,NA
+330170,RJ,Duque de Caxias,7,76,Ciclo 1,NA
+330190,RJ,Itaboraí,0,40,Ciclo 1,NA
+330250,RJ,Magé,1,60,Ciclo 1,NA
+330270,RJ,Maricá,0,23,Ciclo 1,NA
+330285,RJ,Mesquita,1,20,Ciclo 1,NA
+330320,RJ,Nilópolis,0,7,Ciclo 1,NA
+330330,RJ,Niterói,0,40,Ciclo 1,NA
+330350,RJ,Nova Iguaçu,0,56,Ciclo 1,NA
+330414,RJ,Queimados,1,12,Ciclo 1,NA
+330420,RJ,Resende,0,26,Ciclo 1,NA
+330455,RJ,Rio de Janeiro,24,155,Ciclo 1,NA
+330490,RJ,São Gonçalo,10,120,Ciclo 1,NA
+330510,RJ,São João de Meriti,1,15,Ciclo 1,NA
+350600,SP,Bauru,0,19,Ciclo 1,NA
+350750,SP,Botucatu,0,14,Ciclo 1,NA
+351350,SP,Cubatão,0,13,Ciclo 1,NA
+351870,SP,Guarujá,1,15,Ciclo 1,NA
+352230,SP,Itapetininga,0,23,Ciclo 1,NA
+352310,SP,Itaquaquecetuba,0,16,Ciclo 1,NA
+353470,SP,Ourinhos,0,17,Ciclo 1,NA
+354100,SP,Praia Grande,0,20,Ciclo 1,NA
+355030,SP,São Paulo,4,423,Ciclo 1,NA
+410040,PR,Almirante Tamandaré,1,9,Ciclo 1,NA
+410690,PR,Curitiba,0,101,Ciclo 1,NA
+420540,SC,Florianópolis,0,49,Ciclo 1,NA
+421190,SC,Palhoça,0,19,Ciclo 1,NA
+421660,SC,São José,0,19,Ciclo 1,NA
+430060,RS,Alvorada,0,13,Ciclo 1,NA
+430210,RS,Bento Gonçalves,0,22,Ciclo 1,NA
+430460,RS,Canoas,0,31,Ciclo 1,NA
+430510,RS,Caxias do Sul,0,44,Ciclo 1,NA
+431410,RS,Passo Fundo,0,46,Ciclo 1,NA
+431490,RS,Porto Alegre,46,160,Ciclo 1,NA
+431560,RS,Rio Grande,0,29,Ciclo 1,NA
+431680,RS,Santa Cruz do Sul,0,24,Ciclo 1,NA
+431690,RS,Santa Maria,0,26,Ciclo 1,NA
+431870,RS,São Leopoldo,2,15,Ciclo 1,NA
+432000,RS,Sapucaia do Sul,0,17,Ciclo 1,NA
+432300,RS,Viamão,0,12,Ciclo 1,NA
+500270,MS,Campo Grande,4,54,Ciclo 1,NA
+500370,MS,Dourados,1,31,Ciclo 1,NA
+510340,MT,Cuiabá,1,63,Ciclo 1,NA
+520870,GO,Goiânia,1,83,Ciclo 1,NA
+521250,GO,Luziânia,0,28,Ciclo 1,NA
+530010,DF,Brasília,7,138,Ciclo 1,NA
+110012,RO,Porto Velho,8,2,Ciclo 2,NA
+120040,AC,Rio Branco,8,14,Ciclo 2,NA
+130260,AM,Manaus,3,139,Ciclo 2,NA
+140010,RR,Boa Vista,16,7,Ciclo 2,NA
+150140,PA,Belém,4,40,Ciclo 2,NA
+150170,PA,Bragança,3,9,Ciclo 2,NA
+150442,PA,Marituba,1,11,Ciclo 2,NA
+150553,PA,Parauapebas,4,2,Ciclo 2,NA
+160030,AP,Macapá,10,15,Ciclo 2,NA
+170210,TO,Araguaína,0,16,Ciclo 2,NA
+172100,TO,Palmas,3,29,Ciclo 2,NA
+210750,MA,Paço do Lumiar,3,0,Ciclo 2,NA
+211130,MA,São Luís,1,35,Ciclo 2,NA
+211220,MA,Timon,1,20,Ciclo 2,NA
+220770,PI,Parnaíba,0,28,Ciclo 2,NA
+221100,PI,Teresina,2,7,Ciclo 2,NA
+230370,CE,Caucaia,4,41,Ciclo 2,NA
+230440,CE,Fortaleza,10,44,Ciclo 2,NA
+230765,CE,Maracanaú,27,1,Ciclo 2,NA
+240325,RN,Parnamirim,20,0,Ciclo 2,NA
+240810,RN,Natal,10,24,Ciclo 2,NA
+250750,PB,João Pessoa,19,79,Ciclo 2,NA
+251370,PB,Santa Rita,5,30,Ciclo 2,NA
+260290,PE,Cabo de Santo Agostinho,0,37,Ciclo 2,NA
+260345,PE,Camaragibe,7,31,Ciclo 2,NA
+260680,PE,Igarassu,2,23,Ciclo 2,NA
+260790,PE,Jaboatão dos Guararapes,1,40,Ciclo 2,NA
+260960,PE,Olinda,22,20,Ciclo 2,NA
+261110,PE,Petrolina,0,27,Ciclo 2,NA
+261160,PE,Recife,18,106,Ciclo 2,NA
+261370,PE,São Lourenço da Mata,0,24,Ciclo 2,NA
+270430,AL,Maceió,9,10,Ciclo 2,NA
+280030,SE,Aracaju,25,6,Ciclo 2,NA
+280480,SE,Nossa Senhora do Socorro,6,2,Ciclo 2,NA
+290570,BA,Camaçari,9,2,Ciclo 2,NA
+292530,BA,Porto Seguro,32,1,Ciclo 2,NA
+292740,BA,Salvador,27,28,Ciclo 2,NA
+293135,BA,Teixeira de Freitas,30,4,Ciclo 2,NA
+310620,MG,Belo Horizonte,72,74,Ciclo 2,NA
+312770,MG,Governador Valadares,26,15,Ciclo 2,NA
+313670,MG,Juiz de Fora,0,14,Ciclo 2,NA
+315460,MG,Ribeirão das Neves,1,29,Ciclo 2,NA
+315670,MG,Sabará,0,5,Ciclo 2,NA
+315780,MG,Santa Luzia,0,19,Ciclo 2,NA
+316860,MG,Teófilo Otoni,0,24,Ciclo 2,NA
+317120,MG,Vespasiano,0,11,Ciclo 2,NA
+320130,ES,Cariacica,6,7,Ciclo 2,NA
+320240,ES,Guarapari,1,1,Ciclo 2,NA
+320320,ES,Linhares,17,1,Ciclo 2,NA
+320490,ES,São Mateus,1,14,Ciclo 2,NA
+320500,ES,Serra,16,3,Ciclo 2,NA
+320520,ES,Vila Velha,1,7,Ciclo 2,NA
+320530,ES,Vitória,6,16,Ciclo 2,NA
+330045,RJ,Belford Roxo,0,20,Ciclo 2,NA
+330170,RJ,Duque de Caxias,3,51,Ciclo 2,NA
+330190,RJ,Itaboraí,1,25,Ciclo 2,NA
+330250,RJ,Magé,1,9,Ciclo 2,NA
+330270,RJ,Maricá,2,14,Ciclo 2,NA
+330285,RJ,Mesquita,0,10,Ciclo 2,NA
+330320,RJ,Nilópolis,0,9,Ciclo 2,NA
+330330,RJ,Niterói,1,28,Ciclo 2,NA
+330350,RJ,Nova Iguaçu,5,27,Ciclo 2,NA
+330414,RJ,Queimados,0,10,Ciclo 2,NA
+330420,RJ,Resende,20,0,Ciclo 2,NA
+330455,RJ,Rio de Janeiro,164,9,Ciclo 2,NA
+330490,RJ,São Gonçalo,14,112,Ciclo 2,NA
+330510,RJ,São João de Meriti,8,7,Ciclo 2,NA
+350600,SP,Bauru,4,0,Ciclo 2,NA
+350750,SP,Botucatu,9,2,Ciclo 2,NA
+351350,SP,Cubatão,2,4,Ciclo 2,NA
+351870,SP,Guarujá,6,3,Ciclo 2,NA
+352230,SP,Itapetininga,4,6,Ciclo 2,NA
+352310,SP,Itaquaquecetuba,0,1,Ciclo 2,NA
+353470,SP,Ourinhos,0,4,Ciclo 2,NA
+354100,SP,Praia Grande,0,17,Ciclo 2,NA
+355030,SP,São Paulo,9,260,Ciclo 2,NA
+410040,PR,Almirante Tamandaré,1,5,Ciclo 2,NA
+410690,PR,Curitiba,1,100,Ciclo 2,NA
+420540,SC,Florianópolis,5,40,Ciclo 2,NA
+421190,SC,Palhoça,0,19,Ciclo 2,NA
+421660,SC,São José,1,18,Ciclo 2,NA
+430060,RS,Alvorada,12,1,Ciclo 2,NA
+430210,RS,Bento Gonçalves,5,6,Ciclo 2,NA
+430460,RS,Canoas,9,2,Ciclo 2,NA
+430510,RS,Caxias do Sul,6,16,Ciclo 2,NA
+431410,RS,Passo Fundo,15,0,Ciclo 2,NA
+431490,RS,Porto Alegre,112,21,Ciclo 2,NA
+431560,RS,Rio Grande,18,0,Ciclo 2,NA
+431680,RS,Santa Cruz do Sul,11,0,Ciclo 2,NA
+431690,RS,Santa Maria,5,8,Ciclo 2,NA
+431870,RS,São Leopoldo,9,0,Ciclo 2,NA
+432000,RS,Sapucaia do Sul,12,2,Ciclo 2,NA
+500270,MS,Campo Grande,33,1,Ciclo 2,NA
+500370,MS,Dourados,21,4,Ciclo 2,NA
+510340,MT,Cuiabá,8,42,Ciclo 2,NA
+520870,GO,Goiânia,4,55,Ciclo 2,NA
+521250,GO,Luziânia,0,17,Ciclo 2,NA
+530010,DF,Brasília,43,21,Ciclo 2,NA
+110012,RO,Porto Velho,12,0,Ciclo 3,0
+120040,AC,Rio Branco,37,4,Ciclo 3,15
+130260,AM,Manaus,99,80,Ciclo 3,9
+140010,RR,Boa Vista,32,0,Ciclo 3,0
+150140,PA,Belém,34,19,Ciclo 3,0
+150170,PA,Bragança,16,1,Ciclo 3,0
+150420,PA,Marabá,11,0,Ciclo 3,0
+150442,PA,Marituba,8,5,Ciclo 3,0
+150553,PA,Parauapebas,9,0,Ciclo 3,0
+160030,AP,Macapá,30,6,Ciclo 3,3
+170210,TO,Araguaína,10,7,Ciclo 3,1
+172100,TO,Palmas,31,1,Ciclo 3,0
+210750,MA,Paço do Lumiar,5,3,Ciclo 3,0
+211130,MA,São Luís,46,1,Ciclo 3,2
+211220,MA,Timon,24,9,Ciclo 3,0
+220770,PI,Parnaíba,32,0,Ciclo 3,1
+221100,PI,Teresina,20,3,Ciclo 3,1
+230370,CE,Caucaia,10,35,Ciclo 3,0
+230440,CE,Fortaleza,42,6,Ciclo 3,45
+230765,CE,Maracanaú,27,0,Ciclo 3,0
+240325,RN,Parnamirim,27,1,Ciclo 3,0
+240810,RN,Natal,40,2,Ciclo 3,0
+250750,PB,João Pessoa,63,34,Ciclo 3,6
+251370,PB,Santa Rita,29,0,Ciclo 3,8
+260290,PE,Cabo de Santo Agostinho,37,1,Ciclo 3,2
+260345,PE,Camaragibe,10,33,Ciclo 3,0
+260680,PE,Igarassu,26,3,Ciclo 3,0
+260790,PE,Jaboatão dos Guararapes,73,1,Ciclo 3,20
+260960,PE,Olinda,24,15,Ciclo 3,3
+261110,PE,Petrolina,23,16,Ciclo 3,3
+261160,PE,Recife,26,44,Ciclo 3,56
+261370,PE,São Lourenço da Mata,6,11,Ciclo 3,8
+270430,AL,Maceió,34,1,Ciclo 3,6
+280030,SE,Aracaju,40,3,Ciclo 3,0
+280480,SE,Nossa Senhora do Socorro,14,2,Ciclo 3,0
+290570,BA,Camaçari,9,0,Ciclo 3,0
+292530,BA,Porto Seguro,25,0,Ciclo 3,11
+292740,BA,Salvador,42,1,Ciclo 3,24
+293135,BA,Teixeira de Freitas,32,1,Ciclo 3,5
+310620,MG,Belo Horizonte,117,5,Ciclo 3,27
+312770,MG,Governador Valadares,3,39,Ciclo 3,0
+313670,MG,Juiz de Fora,0,37,Ciclo 3,1
+315460,MG,Ribeirão das Neves,1,48,Ciclo 3,4
+315670,MG,Sabará,6,0,Ciclo 3,0
+315780,MG,Santa Luzia,24,1,Ciclo 3,0
+316860,MG,Teófilo Otoni,31,1,Ciclo 3,0
+317120,MG,Vespasiano,0,8,Ciclo 3,1
+320130,ES,Cariacica,3,2,Ciclo 3,7
+320240,ES,Guarapari,13,1,Ciclo 3,0
+320320,ES,Linhares,19,0,Ciclo 3,0
+320490,ES,São Mateus,13,0,Ciclo 3,5
+320500,ES,Serra,21,0,Ciclo 3,0
+320520,ES,Vila Velha,7,1,Ciclo 3,1
+320530,ES,Vitória,20,0,Ciclo 3,3
+330045,RJ,Belford Roxo,0,17,Ciclo 3,2
+330170,RJ,Duque de Caxias,4,16,Ciclo 3,20
+330190,RJ,Itaboraí,1,33,Ciclo 3,0
+330250,RJ,Magé,3,9,Ciclo 3,0
+330270,RJ,Maricá,17,0,Ciclo 3,0
+330285,RJ,Mesquita,0,12,Ciclo 3,0
+330320,RJ,Nilópolis,0,9,Ciclo 3,0
+330330,RJ,Niterói,33,3,Ciclo 3,1
+330350,RJ,Nova Iguaçu,40,0,Ciclo 3,2
+330414,RJ,Queimados,3,7,Ciclo 3,1
+330420,RJ,Resende,9,1,Ciclo 3,0
+330455,RJ,Rio de Janeiro,188,2,Ciclo 3,7
+330490,RJ,São Gonçalo,11,97,Ciclo 3,12
+330510,RJ,São João de Meriti,13,2,Ciclo 3,0
+350600,SP,Bauru,7,0,Ciclo 3,0
+350750,SP,Botucatu,14,0,Ciclo 3,0
+351350,SP,Cubatão,5,1,Ciclo 3,0
+351870,SP,Guarujá,10,0,Ciclo 3,0
+352230,SP,Itapetininga,8,0,Ciclo 3,0
+352310,SP,Itaquaquecetuba,6,0,Ciclo 3,0
+353470,SP,Ourinhos,4,1,Ciclo 3,0
+354100,SP,Praia Grande,21,0,Ciclo 3,0
+355030,SP,São Paulo,260,6,Ciclo 3,4
+410040,PR,Almirante Tamandaré,3,0,Ciclo 3,4
+410690,PR,Curitiba,1,88,Ciclo 3,2
+420540,SC,Florianópolis,45,2,Ciclo 3,2
+421190,SC,Palhoça,21,0,Ciclo 3,0
+421660,SC,São José,17,0,Ciclo 3,0
+430060,RS,Alvorada,15,0,Ciclo 3,0
+430210,RS,Bento Gonçalves,11,0,Ciclo 3,0
+430460,RS,Canoas,23,1,Ciclo 3,0
+430510,RS,Caxias do Sul,18,0,Ciclo 3,0
+431410,RS,Passo Fundo,13,0,Ciclo 3,2
+431490,RS,Porto Alegre,126,3,Ciclo 3,2
+431560,RS,Rio Grande,22,0,Ciclo 3,0
+431680,RS,Santa Cruz do Sul,16,0,Ciclo 3,0
+431690,RS,Santa Maria,13,0,Ciclo 3,0
+431870,RS,São Leopoldo,10,0,Ciclo 3,0
+432000,RS,Sapucaia do Sul,17,0,Ciclo 3,0
+432300,RS,Viamão,12,0,Ciclo 3,1
+500270,MS,Campo Grande,33,0,Ciclo 3,0
+500370,MS,Dourados,27,0,Ciclo 3,0
+510340,MT,Cuiabá,43,2,Ciclo 3,6
+520870,GO,Goiânia,15,46,Ciclo 3,2
+521250,GO,Luziânia,16,3,Ciclo 3,0
+530010,DF,Brasília,67,4,Ciclo 3,5
