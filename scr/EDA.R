@@ -5,7 +5,7 @@ color <- 'dodgerblue3'
 update_geom_defaults("line",   list(color = color))
 update_geom_defaults("boxplot",   list(fill = color))
 update_geom_defaults("col",   list(fill = color))
-update_geom_defaults("bar",   list(fill = color, color = 'gray80'))
+update_geom_defaults("bar",   list(fill = color))
 
 altura <- 4.5
 comprimento <- 2.5
@@ -51,4 +51,17 @@ ggsave(width = altura, height = comprimento, scale = escala,
 
 # Unidades de saude nos municipios ----------------------------------------
 
-read_csv('out/data/unidades_por_municipio.csv')
+unidades_mun <- read_csv('out/data/unidades_por_municipio.csv')
+
+unidades_mun %>% 
+  mutate(cat = cut(n, breaks = c(0,50,100,150, Inf), labels = c('0-50', '51-100', '101-150','150+'))) %>% 
+  group_by(cat) %>% 
+  count() %>% 
+  ggplot() +
+  geom_col(aes(cat, n)) +
+  geom_text(aes(x = cat, y = n, label = n), nudge_y = 2, fontface = 'bold') +
+  labs(title = 'Categorização dos municípios por quantidade de unidades de saúde', 
+       x = 'Unidades de saúde', y = 'N° de municípios')
+
+ggsave(width = altura, height = comprimento, scale = escala, 
+       filename = 'unidades_municipio_cat.png', path = 'out/plots/')
