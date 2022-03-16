@@ -42,7 +42,13 @@ infec %>%
   geom_line() +
   gghighlight(mean(casos100k) > 100) +
   labs(title = 'Evolução do número de casos por 100 mil habitantes', 
-       subtitle = 'Municipios com média acima de 100', x = NULL, y = 'Casos/100 mil habitantes')
+       subtitle = 'Municipios com média acima de 100 estão em destaque', 
+       x = NULL, y = 'Casos/100 mil habitantes')
 
 ggsave(width = altura, height = comprimento, scale = escala, 
        filename = 'evolução_100k.png', path = 'out/plots/')
+
+
+# Unidades de saude nos municipios ----------------------------------------
+
+read_csv('out/data/unidades_por_municipio.csv')
