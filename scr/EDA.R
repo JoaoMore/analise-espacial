@@ -1,7 +1,9 @@
 library(tidyverse)
 library(gghighlight)
+library(clipr)
 theme_set(theme_minimal())
 color <- 'dodgerblue3'
+update_geom_defaults("point",   list(color = color))
 update_geom_defaults("line",   list(color = color))
 update_geom_defaults("boxplot",   list(fill = color))
 update_geom_defaults("col",   list(fill = color))
@@ -56,7 +58,8 @@ unidades_mun <- read_csv('out/data/unidades_por_municipio.csv')
 unidades_mun %>% 
   mutate(cat = cut(n, breaks = c(0,50,100,150, Inf), labels = c('0-50', '51-100', '101-150','150+'))) %>% 
   group_by(cat) %>% 
-  count() %>% 
+  count() %>%
+  write_clip()
   ggplot() +
   geom_col(aes(cat, n)) +
   geom_text(aes(x = cat, y = n, label = n), nudge_y = 2, fontface = 'bold') +
@@ -65,3 +68,48 @@ unidades_mun %>%
 
 ggsave(width = altura, height = comprimento, scale = escala, 
        filename = 'unidades_municipio_cat.png', path = 'out/plots/')
+
+municipios_prioritarios %>% 
+  left_join(., unidades_mun) %>% 
+  mutate(ubs = round(n*1e5/pop, 0)) %>%
+  arrange(-ubs) %>% 
+  filter( ubs < 100) %>% 
+  select(uf, municipio, pop, n, ubs) %>% 
+  ggplot() +
+  geom_point(aes(pop, n)) +
+  labs(title = 'Número de unidades de saúde x população',
+       x = 'População', y = 'Unidades de Saúde')
+
+ggsave(width = altura, height = comprimento, scale = escala, 
+       filename = 'pop_x_unidades.png', path = 'out/plots/')
+
+municipios_prioritarios %>% 
+  left_join(., unidades_mun) %>% 
+  mutate(ubs = round(n*1e5/pop, 0)) %>%
+  arrange(-ubs) %>% 
+  filter( ubs < 100) %>% 
+  select(uf, municipio, pop, n, ubs) %>% 
+  ggplot() +
+  geom_point(aes(pop, ubs)) +
+  labs(title = 'Número de unidades de saúde/100 mil hab. x população',
+       x = 'População', y = 'Unidades de Saúde/100 mil hab.')
+
+ggsave(width = altura, height = comprimento, scale = escala, 
+       filename = 'pop_x_ubs.png', path = 'out/plots/')
+
+
+# Cobertura assistencial --------------------------------------------------
+
+cobertura <- read_csv('out/data/cobertura.csv') %>% 
+  mutate(cobertura_ab = str_remove(`Cobertura AB`, '%') %>% str_replace(',', '.') %>% as.numeric())
+
+cobertura %>% 
+  ggplot(aes(Competência, cobertura_ab, group = Município, color = Município)) +
+  geom_line() +
+  gghighlight(max(cobertura_ab, na.rm = T) < 40, max_highlight = 10) +
+  labs(title = 'Cobertura da atenção básica', 
+       subtitle = 'Municípios destacados nunca ultrapassaram 40% de cobertura',
+       x = NULL, y = 'Cobertura (%)')
+
+ggsave(width = altura, height = comprimento, scale = escala, 
+       filename = 'cobertura.png', path = 'out/plots/')
