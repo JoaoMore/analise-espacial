@@ -11,7 +11,7 @@ update_geom_defaults("bar",   list(fill = color))
 
 altura <- 4.5
 comprimento <- 2.5
-escala <- 2
+escala <- 1.5
 
 # Infectados por 100k -----------------------------------------------------
 
@@ -133,4 +133,58 @@ ggsave(width = altura, height = comprimento, scale = escala,
 
 # Dispensação de medicamentos ---------------------------------------------
 
+disp <- read_csv('out/data/dispensacao_medicamentos.csv')
 
+disp %>% 
+  rowwise() %>% 
+  mutate(d = c1/sum(c_across(c1:c2), na.rm = T)) %>% 
+  ggplot() +
+  geom_boxplot(aes(ciclo, d)) +
+  labs(title = 'Porcentagem de unidades de saúde nos municípios que
+       têm dispensação de medicamentos na UBS', x = NULL, y = '%')
+
+ggsave(width = altura, height = comprimento, scale = escala, 
+       filename = 'dispensacao.png', path = 'out/plots/')
+
+
+# Disponibilidade de testes de sífilis ------------------------------------
+
+sif <- read_csv('out/data/testes_sifilis.csv')
+
+sif %>% 
+  rowwise() %>% 
+  select(ciclo, c1, c2, c9997) %>% 
+  mutate(p = c1/sum(c_across(c1:c9997), na.rm = T)) %>% 
+  ggplot() +
+  geom_boxplot(aes(ciclo, p)) +
+  labs(title = 'Porcentagem de unidades de saúde nos municípios que
+       sempre tinham teste rápido de sífilis disponível', 
+       x = NULL, y = '%')
+
+ggsave(width = altura, height = comprimento, scale = escala, 
+       filename = 'sifilis.png', path = 'out/plots/')
+
+
+# Medicamentos para sífilis -----------------------------------------------
+
+benz <- read_csv('out/data/benzilpenicilina.csv')
+
+benz %>%
+  select(ciclo, benzatina_1:benzatina_998, benzatina_9997, 
+         proc.pot_1:proc.pot_9997) %>% 
+  rowwise() %>% 
+  mutate(benzatina = benzatina_1/
+           sum(c_across(benzatina_1:benzatina_9997), na.rm = T),
+         procaina = proc.pot_1/
+           sum(c_across(proc.pot_1:proc.pot_9997), na.rm = T)) %>% 
+  select(ciclo, benzatina, procaina) %>% 
+  pivot_longer(benzatina:procaina, names_to = 'Tipo', values_to = 'p') %>% 
+  ggplot() +
+  geom_boxplot(aes(ciclo, p, fill = Tipo)) +
+  labs(title = 'Porcentagem de unidades de saúde nos municípios que
+       sempre tinham benzilpenicilina disponível', 
+       x = NULL, y = '%') +
+  theme(legend.position = 'bottom')
+
+ggsave(width = altura, height = comprimento, scale = escala, 
+       filename = 'benzilpenicilina.png', path = 'out/plots/')
