@@ -113,3 +113,24 @@ cobertura %>%
 
 ggsave(width = altura, height = comprimento, scale = escala, 
        filename = 'cobertura.png', path = 'out/plots/')
+
+
+# Caderneta da gestante ------------------------------------------
+
+gestante <- read_csv('out/data/caderneta_gestante.csv')
+
+gestante %>% 
+  rowwise() %>% 
+  mutate(sempre = c1/sum(c_across(c1:c999), na.rm = T)) %>% 
+  ggplot(aes(ciclo, sempre*100)) +
+  geom_boxplot() +
+  labs(title = 'Porcentagem de unidades de saúde nos 
+       municípios que sempre tinham caderneta da gestante disponível', x = NULL, y = '%')
+
+ggsave(width = altura, height = comprimento, scale = escala, 
+       filename = 'caderneta.png', path = 'out/plots/')
+
+
+# Dispensação de medicamentos ---------------------------------------------
+
+
