@@ -108,7 +108,7 @@ cobertura %>%
   geom_line() +
   gghighlight(max(cobertura_ab, na.rm = T) < 40, max_highlight = 10) +
   labs(title = 'Cobertura da atenção básica', 
-       subtitle = 'Municípios destacados nunca ultrapassaram 40% de cobertura',
+       subtitle = 'Municípios destacados nunca ultrapassaram 40% de cobertura assistencial',
        x = NULL, y = 'Cobertura (%)')
 
 ggsave(width = altura, height = comprimento, scale = escala, 
